@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	    <title>Reto 2</title>
+        <style>
+            input{
+                width : 200px; 
+                height: 25px 
+            }
+            textarea {
+                width : 200px; 
+                height: 70px
+            }
+        </style>
+	    
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type="text/javascript" src="js/funciones.js"></script>
+    </head>
+    <body >
+        <div style="text-align: center;">
+            <h2>Registro Mensaje</h2>
+            <hr>
+            <input type="number" id="id" placeholder="id" readonly="readonly"><br><br>
+            <textarea id="message" placeholder="messagetext"></textarea><br><br>
+            <button style="width : 200px; height: 25px;" onclick="guardarMensaje()">Registrar</button>&nbsp;&nbsp;
+            <button style="width : 200px; height: 25px;" onclick="actualizarMessage()">Actualizar</button>&nbsp;&nbsp;
+            <button style="width : 200px; height: 25px;" onclick="consultarMensaje()">consultar</button><br><br>
+            <hr width="30%">
+            <center><div id="resultado"></div></center>
+            <hr width="30%">
+        </div>
+    </body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	    <title>Reto 2</title>
+        <style>
+            
+            input{
+                width : 200px; 
+                height: 25px 
+            }
+        </style>
+	    <meta http-equiv="Access-Control-Allow-Origin" content="*">
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type="text/javascript" src="js/funciones.js"></script>
+    </head>
+    <body >
+        <div style="text-align: center;">
+            <h2>Registro clientes</h2>
+            <hr>
+            <input type="number" id="id" placeholder="id" readonly="readonly"><br><br>
+            <input type="text" id="name" placeholder="name"><br><br>
+            <input type="email" id="email" placeholder="email"><br><br>
+            <input type="number" id="age" placeholder="age"><br><br>
+            <div>
+            <button style="width : 200px; height: 25px;" onclick="guardarCliente()">Registrar</button>&nbsp;&nbsp;
+            <button style="width : 200px; height: 25px;" onclick="actualizarClient()">Actualizar</button>&nbsp;&nbsp;
+            <button style="width : 200px; height: 25px;" onclick="consultarCliente()">consultar</button><br><br>
+            </div>
+            <hr style="width: 40%; text-align: left;">
+            <center><div id="resultado"></div></center>
+            <hr style="width: 40%; text-align: left;">
+        </div>
+    </body>
+
+</html>
